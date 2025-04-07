@@ -1,4 +1,3 @@
-// routes/cityRoutes.js
 const express = require('express');
 const router = express.Router();
 const { CITIES } = require('../config/config'); // Correct path assuming config is one level up
