@@ -41,7 +41,7 @@ if (!PORT) {
 }
 
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://wide-eyed-wombat-uw8kkk488gsw0ss4o0g4s008:${PORT}`);
   // Explicitly log the port being used, helpful for debugging deployments
   console.log(`Effective PORT configured for listening: ${PORT}`);
 });
