@@ -3,6 +3,7 @@ const cors = require('cors'); // Import cors
 const compression = require('compression'); // Import compression
 const { PORT } = require('./config/config');
 const cityRoutes = require('./routes/cityRoutes');
+const whatsup = require('./routes/whatsappRoutes');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(compression());
 
 // --- Routes ---
 app.use('/api/cities', cityRoutes);
+app.use('/api/whtsup', whatsup);
 
 // --- Basic Root Route (Optional - Good for Health Checks) ---
 app.get('/', (req, res) => {
